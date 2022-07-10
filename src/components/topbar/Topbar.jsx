@@ -5,7 +5,7 @@ import "./topbar.css";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://sdc-blog.herokuapp.com/images/"
+  const PF = "https://sdc-blog.herokuapp.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -36,12 +36,11 @@ export default function TopBar() {
             </a>
           </li>
           <li className="topListItem">
-            {
-              user?
+            {user ? (
               <Link className="link" to="/write">
                 WRITE
-              </Link>:null
-            }
+              </Link>
+            ) : null}
           </li>
           <li className="topListItem" onClick={handleLogout}>
             {user && "LOGOUT"}
@@ -52,23 +51,27 @@ export default function TopBar() {
         {user ? (
           <>
             <Link to="/settings">
-              <img className="topImg" src={PF+user.profilePic} alt="profileimg"/>
+              <img
+                className="topImg"
+                src={PF + user.profilePic}
+                alt="profileimg"
+              />
             </Link>
             {/* ForUsername Display */}
             {/* <h5 style={{color:'white'}}></h5> */}
           </>
-        ) : ( 
+        ) : (
           <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
                 LOGIN
               </Link>
             </li>
-            <li className="topListItem">
+            {/* <li className="topListItem">
               <Link className="link" to="/register">
                 REGISTER
               </Link>
-            </li>
+            </li> */}
           </ul>
         )}
         {/* <i className="topSearchIcon fas fa-search"></i> */}

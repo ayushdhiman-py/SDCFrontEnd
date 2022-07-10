@@ -36,7 +36,7 @@ export default function Login() {
         />
         <label>Password</label>
         <input
-          type="text"
+          type="password"
           className="loginInput"
           placeholder="Enter your password..."
           ref={passwordRef}
@@ -52,11 +52,11 @@ export default function Login() {
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login
         </button>
-        <button className="loginRegisterButton">
+        {/* <button className="loginRegisterButton">
           <Link className="link" to="/register">
             Register
           </Link>
-        </button>
+        </button> */}
       </form>
     </div>
   );

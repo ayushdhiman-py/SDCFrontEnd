@@ -12,7 +12,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 import axios from "axios";
 
-axios.defaults.baseURL="https://sdc-blog.herokuapp.com/api"
+axios.defaults.baseURL = "https://sdc-blog.herokuapp.com/api";
 
 function App() {
   const { user } = useContext(Context);
@@ -23,30 +23,16 @@ function App() {
         <Route exact path="/">
           <Homepage />
         </Route>
-        <Route path="/register">
+        {/* <Route path="/register">
           {
             user?
             <Home/>:
             <Register />
           }
-        </Route>
-        <Route path="/login">
-          {
-            user?
-            <Home/>:
-            <Login />
-          }
-        </Route>
-        <Route path="/write">
-          {
-            user?
-            <Write />:
-            <Home/>
-          }
-        </Route>
-        <Route path="/settings">
-          {user ? <Settings /> : <Register />}
-        </Route>
+        </Route> */}
+        <Route path="/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/write">{user ? <Write /> : <Home />}</Route>
+        <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
         <Route path="/post/:id">
           <Single />
         </Route>
