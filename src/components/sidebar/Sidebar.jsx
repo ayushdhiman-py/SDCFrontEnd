@@ -24,7 +24,7 @@ export default function Sidebar() {
           Pichai Sundararajan known as Sundar Pichai is an Indian-American
           business executive and technocrat. He is the current chief executive
           officer (CEO) of Google Inc. He is the mastermind behind the launch of
-          our most loved browser, Google Chrome
+          our most loved browser, Google Chrome.
         </p>
       </div>
       <div className="sidebarItem">

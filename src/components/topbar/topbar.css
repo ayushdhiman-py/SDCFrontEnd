@@ -14,6 +14,7 @@
   z-index: 999;
   font-family: "Josefin Sans", sans-serif;
   border: 1px solid black;
+  width: 100%;
 }
 
 .topLeft,
@@ -71,4 +72,14 @@
   font-size: 18px;
   color: #666;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+  .topLeft>i{
+    display: none;
+  }
+  .topCenter{
+    margin-left: -6rem;
+  }
 }

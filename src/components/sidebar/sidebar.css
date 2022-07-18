@@ -28,16 +28,19 @@
   line-height: 19px;
   color: #222222;
   font-weight: 600;
+  display: none;
 }
 
 .sidebarItem > img {
   margin-top: 15px;
   width: 250px;
   height: 250px;
+  border-radius: 10px;
 }
 
 .sidebarItem > p {
   padding: 30px;
+  margin-bottom: -30px;
 }
 
 .sidebarList {
@@ -70,4 +73,10 @@
 .sidebarIcon {
   font-size: 16px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 992px){
+  .sidebar{
+    display: none;
+  }
 }
