@@ -16,9 +16,9 @@ export default function Post({ post }) {
           <span className="postTitle"  style={{color:'black'}}>{post.title}</span>
         </Link>
         <hr />
-        <span className="postDate"  style={{color:'white', fontSize:'15px', backgroundColor:'black', padding:'10px'}}>
+        {/* <span className="postDate"  style={{color:'white', fontSize:'15px', backgroundColor:'black', padding:'10px'}}>
           {new Date(post.createdAt).toDateString()}
-        </span>
+        </span> */}
       </div>
       <p className="postDesc">{post.desc}</p>
     </div>
