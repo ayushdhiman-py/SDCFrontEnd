@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 992px) {
   .top{
-    padding: 1rem;
+    padding: 0rem;
   }
   .topLeft{
     display: flex;
@@ -90,5 +90,8 @@
   }
   .topCenter{
     margin-left: 0rem;
+  }
+  .topIcon, .fa {
+    margin: 10px;
   }
 }
