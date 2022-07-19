@@ -7,11 +7,11 @@ export default function Post({ post }) {
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
       <div className="postInfo">
-        <div className="postcard">
+        {/* <div className="postcard">
           {post.categories.map((c) => (
             <span className="postCat">{c.name}</span>
           ))}
-        </div>
+        </div> */}
         <Link to={`/post/${post._id}`} className="link" style={{marginTop:'20px'}}>
           <span className="postTitle"  style={{color:'black'}}>{post.title}</span>
         </Link>
