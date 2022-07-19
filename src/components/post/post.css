@@ -64,9 +64,18 @@
   color: #000000 !important;
 }
 
+.line{
+  display: none;
+}
 
 @media screen and (max-width: 992px) {
   .post{
     width: 100%;
+  }
+  .line{
+    display: block;
+    width: 100%;
+    color: purple;
+    padding: 1px;
   }
 }

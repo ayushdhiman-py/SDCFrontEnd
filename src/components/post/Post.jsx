@@ -22,6 +22,7 @@ export default function Post({ post }) {
       <Link to={`/post/${post._id}`} className="link" style={{marginTop:'20px'}}>
         <p className="postDesc">{post.desc}</p>
       </Link>
+      <hr className="line"></hr>
     </div>
   );
 }
