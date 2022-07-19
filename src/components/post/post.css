@@ -59,6 +59,14 @@
   cursor: pointer;
 }
 .postcard{
+  display: none;
   background-color: blue;
   color: #000000 !important;
+}
+
+
+@media screen and (max-width: 992px) {
+  .post{
+    width: 100%;
+  }
 }
