@@ -15,9 +15,9 @@ export default function Post({ post }) {
         <Link to={`/post/${post._id}`} className="link" style={{marginTop:'20px'}}>
           <span className="postTitle"  style={{color:'black'}}>{post.title}</span>
         </Link>
-        {/* <span className="postDate"  style={{color:'white', fontSize:'15px', backgroundColor:'black', padding:'10px'}}>
+        <span className="postDate"  style={{color:'white', fontSize:'15px', backgroundColor:'black', padding:'10px'}}>
           {new Date(post.createdAt).toDateString()}
-        </span> */}
+        </span>
       </div>
       <Link to={`/post/${post._id}`} className="link" style={{marginTop:'20px'}}>
         <p className="postDesc">{post.desc}</p>
