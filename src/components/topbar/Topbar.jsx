@@ -53,11 +53,12 @@ export default function TopBar() {
         {user ? (
           <>
             <Link to="/settings">
-              <img
+              {/* <img
                 className="topImg"
                 src={PF + user.profilePic}
                 alt="profileimg"
-              />
+              /> */}
+              <h1>{user.username}</h1>
             </Link>
             {/* ForUsername Display */}
             {/* <h5 style={{color:'white'}}></h5> */}
