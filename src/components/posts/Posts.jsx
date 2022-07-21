@@ -4,7 +4,7 @@ import "./posts.css";
 export default function Posts({ posts }) {
   return (
     <div className="posts">
-      {posts.map((p, idx) => (
+      {posts.slice(0).reverse().map((p, idx) => (
         <Post post={p} key={idx} />
       ))}
     </div>
