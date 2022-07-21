@@ -19,14 +19,13 @@
 }
 
 .headerTitleSm {
-  position: absolute;
-  top: 25%;
+  margin-top: 3%;
+  /* position: absolute; */
   font-size: 2rem;
 }
 
 .headerTitleLg {
-  position: absolute;
-  top: 30%;
+  /* position: absolute; */
   font-size: 4rem;
 }
 
