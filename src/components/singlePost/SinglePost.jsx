@@ -100,7 +100,7 @@ export default function SinglePost() {
           </>
         ):
         <p className="singlePostDesc">
-          <pre>{desc}</pre>
+          {desc}
         </p>
         }
         {
