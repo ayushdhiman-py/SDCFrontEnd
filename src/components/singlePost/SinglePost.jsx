@@ -47,7 +47,6 @@ export default function SinglePost() {
 
   return (
     <div className="singlePost">
-      <pre>
       <div className="singlePostWrapper">
         {post.photo && (
           <img src={PF + post.photo} alt="" className="singlePostImg" />
@@ -101,7 +100,7 @@ export default function SinglePost() {
           </>
         ):
         <p className="singlePostDesc">
-          {desc}
+          <pre>{desc}</pre>
         </p>
         }
         {
@@ -109,7 +108,6 @@ export default function SinglePost() {
           (<button className="singlePostButton" onClick={handleUpdate} >Update</button>)
         }
         </div>
-        </pre>
     </div>
   );
 }
