@@ -1,4 +1,3 @@
-// https://www.youtube.com/user/GeekyShow1
 import Topbar from "./components/topbar/Topbar";
 import Homepage from "./pages/homepage/Homepage";
 import Login from "./pages/login/Login";
@@ -23,13 +22,13 @@ function App() {
         <Route exact path="/">
           <Homepage />
         </Route>
-        {/* <Route path="/register">
+        <Route path="/register">
           {
             user?
             <Home/>:
             <Register />
           }
-        </Route> */}
+        </Route>
         <Route path="/login">{user ? <Home /> : <Login />}</Route>
         <Route path="/write">{user ? <Write /> : <Home />}</Route>
         <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
