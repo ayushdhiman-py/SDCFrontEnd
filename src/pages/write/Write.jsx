@@ -61,7 +61,7 @@ export default function Write() {
             placeholder="Start writing..."
             type="text"
             className="writeInput writeText"
-            onChange={e=>setDesc(`<pre>${e.target.value}</pre>`)}
+            onChange={e=>setDesc(e.target.value)}
           ></textarea>
         </div>
         <button className="writeSubmit" type="submit">
