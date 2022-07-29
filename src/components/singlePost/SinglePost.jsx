@@ -96,7 +96,9 @@ export default function SinglePost() {
         {updateMode ? (
           <>
             <h2>Click outside to save</h2>
-            <textarea value={desc} className="singlePostDescInput" onChange={(e)=>{setDesc(e.target.value)}}/>
+            <pre>
+              <textarea value={desc} className="singlePostDescInput" onChange={(e)=>{setDesc(e.target.value)}}/>
+            </pre>
           </>
         ):
         <p className="singlePostDesc">
