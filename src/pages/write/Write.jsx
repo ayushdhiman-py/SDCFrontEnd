@@ -62,6 +62,7 @@ export default function Write() {
             type="text"
             className="writeInput writeText"
             onChange={e=>setDesc(e.target.value)}
+            wrap="off"
           ></textarea>
         </div>
         <button className="writeSubmit" type="submit">
